@@ -52,3 +52,11 @@
 ##### As a user, I would like to create Posts that will be visible to everyone in my neighborhood.
 ##### As a user, I would like to change My neighborhood when I decide to move out.
 ##### As a user, I would like to only view details of a single neighborhood.
+
+
+### Technologies Used
+##### Python
+##### Django
+##### PostgreSQL
+##### HTML5
+##### CSS3
