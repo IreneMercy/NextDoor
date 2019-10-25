@@ -42,3 +42,13 @@
 #### For more information read the following django and python documentation:
   - [DjangoDocumentation](https://docs.djangoproject.com/en/1.11/intro/install/)
   - [PythonDocumentation](https://www.python.org/doc/)
+
+
+### User Stories
+##### As a user, I would like to sign in with the application to start using.
+##### As a user, I would like to set up a profile about me and a general location and my neighborhood name.
+##### As a user, I would like to find a list of different businesses in my neighborhood.
+##### As a user, I would like to find Contact Information for the health department and Police authorities near my neighborhood .
+##### As a user, I would like to create Posts that will be visible to everyone in my neighborhood.
+##### As a user, I would like to change My neighborhood when I decide to move out.
+##### As a user, I would like to only view details of a single neighborhood.
