@@ -53,6 +53,13 @@
 ##### As a user, I would like to change My neighborhood when I decide to move out.
 ##### As a user, I would like to only view details of a single neighborhood.
 
+### Behavior Driven Development
+#### Given that a user has logged  in successfully, then they should be able to set up a profile, a general location and their neighborhood name.
+#### Given that a user has logged in, then they should be able to search for different business in their neighborhood successfully.
+#### Given that a user is logged in, and has set their neighborhood, then they should be able to find the contacts of health departments and police authorities .
+#### Given that a user is logged in, then they should be able to make posts and the whole neighborhood should have be able to view that post.
+#### Given that a user has relocated, then they should be able to update their neighborhood.
+
 
 ### Technologies Used
 ##### Python
@@ -60,7 +67,6 @@
 ##### PostgreSQL
 ##### HTML5
 ##### CSS3
-
 
 
 ### Licence
