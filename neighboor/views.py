@@ -3,6 +3,7 @@ from django.contrib.auth.decorators import login_required
 from django.contrib import messages
 from .forms import *
 from .models import *
+from .emails import send_welcome_email
 from rest_framework.response import Response
 from rest_framework.views import APIView
 
@@ -15,6 +16,16 @@ def registration(request):
         if form.is_valid():
             username = form.cleaned_data.get('username')
             form.save()
+
+            username=form.cleaned_data['username']
+            email=form.cleaned_data['email']
+            password1=form.cleaned_data['password1']
+            recipient=User(username=username,email=email)
+            try:
+                send_welcome_email(username,email)
+                messages.success(request, f'Account has been created successfully!')
+            except:
+                print('error')
             return redirect('/login')
     else:
         form = RegisterForm()
