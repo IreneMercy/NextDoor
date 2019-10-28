@@ -33,3 +33,24 @@ def registration(request):
         'form':form,
     }
     return render(request, 'users/register.html', context)
+
+
+
+
+def search_business(request):
+    if 'business' in request.GET and request.GET['business']:
+        search_term = request.GET["business"]
+        searched_business = Business.search_by_id(search_term)
+        message = f'search_term'
+        context = {
+            "business":searched_business,
+            "message":message,
+
+        }
+        return render(request, 'search.html', context)
+    else:
+        message = "You haven't searched for any user"
+        context = {
+            "message":message,
+        }
+        return render(request, 'search.html', context)
