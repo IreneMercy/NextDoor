@@ -7,6 +7,8 @@ from .emails import send_welcome_email
 from rest_framework.response import Response
 from rest_framework.views import APIView
 
+
+@login_required
 def home(request):
     posts = Post.objects.all()
     hoods = Neighborhood.objects.all()
@@ -44,7 +46,7 @@ def registration(request):
 
 
 
-
+@login_required
 def search_business(request):
     businesses = Business.objects.all()
     if 'business' in request.GET and request.GET['business']:
@@ -90,7 +92,7 @@ def updateprofile(request):
     return render(request, 'updateprofile.html', context)
 
 
-
+@login_required
 
 def profile(request):
     if request.method == 'POST':

@@ -23,3 +23,22 @@
 .sticky-sidebar{
   background-position: fixed;
 }
+.container-full{
+  overflow-x: hidden;
+  overflow-y:hidden;
+}
+.banner{
+  background-image: url(../images/hodi.jpg);
+  height:70vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow-x: hidden;
+}
+
+
+.overlaybanner{
+  background-color: black;
+  opacity: 0.9;
+  height:70vh;
+}
