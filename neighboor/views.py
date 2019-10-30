@@ -49,9 +49,9 @@ def search_business(request):
     businesses = Business.objects.all()
     if 'business' in request.GET and request.GET['business']:
         search_term = request.GET["business"]
-        searched_business = Business.objects.get(name__icontains=search_term)
+        searched_business = Business.search_by_name(search_term)
         print('*********',searched_business)
-        message = f'search_term'
+        message = f'{search_term}'
         context = {
             "searched_business":searched_business,
             "message":message,
