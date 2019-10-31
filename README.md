@@ -21,7 +21,7 @@
 ##### Git clone the project on your current directory by:
   - ```git clone https://github.com/IreneMercy/NextDoor.git```.
 ##### Move to your project directory:
-- ```cd Instapic```.
+- ```cd NextDoor```.
 ##### Open the project on your terminal:
   - ```atom . or code .``` , according to the type of your text editor.
 ##### Install virtual environment using python:
